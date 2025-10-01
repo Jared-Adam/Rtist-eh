@@ -1,6 +1,7 @@
 # Art? 
 
 library(tidyverse)
+library(RColorBrewer)
 
 # blank canvas ####
 
@@ -49,4 +50,5 @@ polk %>%
   geom_point(size = 10, 
              color = dot_color)+
   theme(plot.background = element_rect(fill = back_col))
+
 
