@@ -64,9 +64,9 @@ circle_now %>%
 
 # can you make this roate? ####
 # 
-# circle_now %>% 
-#   mutate(move = 1:60000) %>% 
-#   transition_manual(move, cumulative = TRUE) 
+circle_now %>%
+  mutate(move = 1:60000) %>%
+  transition_manual(move, cumulative = TRUE)
 # 
 # 
 # ?gganimate
