@@ -1,4 +1,6 @@
 # zig zag jawn ####
+library(tidyverse)
+
 axis_min <- 0
 axis_max <- 10
 base_2 <- tibble(x = axis_min:axis_max, #0-10
