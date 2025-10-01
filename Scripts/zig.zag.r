@@ -1,6 +1,6 @@
 # zig zag jawn ####
 library(tidyverse)
-
+library(RColorBrewer)
 axis_min <- 0
 axis_max <- 10
 base_2 <- tibble(x = axis_min:axis_max, #0-10
@@ -81,5 +81,4 @@ col_zig %>%
             lineend = "square",
             linejoin = "mitre",
             color = col_zig$color)+
-  theme(plot.background = element_rect(fill = background_col))
-
+  theme(plot.background = element_rect(fill = background_col))+
